@@ -1,2 +1,2 @@
-# private-test
+# eth-test
 private test repo
