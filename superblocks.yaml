@@ -1,6 +1,6 @@
 version: 1
 jobs:
-  patata job:
+  patata_job:
     image: node
     script:
       - npm install truffle
