@@ -7,8 +7,4 @@ sdfsfsdfsf
 sxxdx
 sdfsf
 asdasd
-ff
-чсм
-zzzz
-zz
-sdf
+fdddd
