@@ -16,7 +16,9 @@ jobs:
       - ./node_modules/.bin/truffle test
 
 stages:
-  - build_and_test:
+  - just_build:
       jobs:
         - build
+  - just_test:
+      jobs:
         - test
