@@ -2,6 +2,4 @@
 eth test repo
 -----
 sdfsfsdfsxcxc
-xcv
-asassdfd
 sd
