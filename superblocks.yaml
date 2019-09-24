@@ -10,7 +10,7 @@ jobs:
   test:
     image: node
     script:
-      - echo ${VAR_A}
+      - echo ${VAR_A}, ${VAR_B}, ${VAR_C}
 stages:
   - just_build:
       jobs:
