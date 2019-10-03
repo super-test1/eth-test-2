@@ -7,9 +7,14 @@ jobs:
       - npm install
       - ./node_modules/.bin/truffle compile
       - ./node_modules/.bin/truffle test
-
-  
+  test:
+    image: node
+    script:
+      - echo ${VAR_A}, ${VAR_B}, ${VAR_C}
 stages:
   - just_build:
       jobs:
         - build
+  - just_test:
+      jobs:
+        - test
