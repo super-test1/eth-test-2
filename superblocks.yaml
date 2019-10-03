@@ -8,9 +8,15 @@ jobs:
       - ./node_modules/.bin/truffle compile
       - ./node_modules/.bin/truffle test
   test:
-    image: node
+    image: 'alpine:3.10'
+    services:
+      - name: superblocks/variables-decoder
+        alias: variables-decoder
     script:
-      - echo ${VAR_A}, ${VAR_B}, ${VAR_C}
+      - apk add curl
+      - eval "$(curl -X POST 'http://variables-decoder/decode-vars' -H 'Content-Type:text/plain' --data-binary @super_env_variables.txt)"
+      - echo vars are $Q, $Q1, $Q2
+  
 stages:
   - just_build:
       jobs:
