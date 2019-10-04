@@ -8,6 +8,3 @@ sdfsf
 gh
 xccx
 sdssd
-zxczxc
-asdfasf
-sda
