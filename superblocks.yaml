@@ -23,6 +23,6 @@ jobs:
 stages:
   - just_build:
       jobs:
-        - build
+        - build:
             when: manual
         - test
