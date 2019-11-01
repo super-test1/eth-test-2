@@ -2,6 +2,7 @@ version: 1
 jobs:
   build:
     image: node
+    when: manual
     script:
       - npm install truffle
       - npm install
