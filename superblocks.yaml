@@ -2,7 +2,6 @@ version: 1
 jobs:
   build:
     image: node
-    when: manual
     script:
       - npm install truffle
       - npm install
@@ -25,4 +24,5 @@ stages:
   - just_build:
       jobs:
         - build
+            when: manual
         - test
