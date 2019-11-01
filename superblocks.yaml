@@ -21,8 +21,10 @@ jobs:
       - curl http://hello
 
 stages:
+  - just_test:
+      jobs:
+        - test
   - just_build:
       jobs:
         - build:
             when: manual
-        - test
